@@ -46,6 +46,7 @@
         android:layout_alignParentBottom="true"
         android:background="?android:windowBackground"
         app:labelVisibilityMode="selected"
-        app:menu="@menu/main_bottom_nav" />
+        app:menu="@menu/main_bottom_nav"
+        app:itemIconSize="28dp"/>
 
 </RelativeLayout>
