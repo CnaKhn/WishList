@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_wishes"
+        android:icon="@drawable/ic_wish_black"
+        android:title="Wishes" />
+
+    <item
+        android:id="@+id/nav_add_wish"
+        android:icon="@drawable/ic_add_black"
+        android:title="Add Wish" />
+
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/ic_setting_black"
+        android:title="Setting" />
+
+</menu>
