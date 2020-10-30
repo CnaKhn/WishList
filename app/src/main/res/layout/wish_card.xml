@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:padding="@dimen/standard_margin">
 
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="match_parent"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_wish_card"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        android:elevation="12dp"
-        app:cardCornerRadius="12dp"
-        app:cardBackgroundColor="@color/colorAccent">
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="@dimen/standard_card_radius">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -21,23 +23,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:src="@drawable/banner"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"/>
+                android:src="@drawable/banner" />
 
-            <TextView
-                android:id="@+id/wish_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/wish_image"
-                android:text="This is my Wish"
-                android:padding="12dp"
-                android:textSize="18sp"/>
 
         </RelativeLayout>
 
 
-    </com.google.android.material.card.MaterialCardView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/wish_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_wish_card"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:lines="1"
+        android:maxLines="1"
+        android:padding="@dimen/standard_margin"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        tools:text="@tools:sample/lorem" />
 
 </RelativeLayout>
